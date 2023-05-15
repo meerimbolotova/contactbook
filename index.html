@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="contacts">
+        <div class="search">
+          <input type="search" class="inp-search" placeholder="Search" />
+          <button class="btn-search">
+            <img src="./icons/search.png" style="width: 17px" alt="" />
+          </button>
+        </div>
+        <h1>Contacts</h1>
+        <ul class="list"></ul>
+        <div class="pagination">
+          <button class="prev">prev</button>
+          <div class="pag-list"></div>
+          <button class="next">next</button>
+        </div>
+      </div>
+      <div class="add-contact">
+        <button class="new-cont-btn">Add new contact</button>
+        <div class="add-modal">
+          <button class="close-btn">X</button>
+          <h3 class="modal-text">New contact</h3>
+          <input type="text" class="add-input" placeholder="Name" id="name" />
+          <input
+            type="text"
+            class="add-input"
+            placeholder="Surname"
+            id="surname"
+          />
+          <input type="text" class="add-input" placeholder="Photo" id="photo" />
+          <input
+            type="number"
+            class="add-input"
+            placeholder="Number"
+            id="number"
+          />
+          <input type="text" class="add-input" placeholder="Email" id="email" />
+          <button class="add-btn">Add</button>
+          <button class="save-btn">Save</button>
+        </div>
+      </div>
+    </div>
+    <!-- modal-info -->
+    <div class="modal-info"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
