@@ -64,7 +64,7 @@ btnAdd.addEventListener("click", async function () {
   read();
 });
 
-// отображение
+// отображение bla bla
 
 async function read() {
   let res = await fetch(`${API}?q=${searchVal}&_page=${count}&_limit=2`);
